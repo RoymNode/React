@@ -11,3 +11,8 @@ export type Person = {
         uuid: string
     }
 }
+
+export type Caterory = {
+    idCategory: string;
+    strCategory: string
+}
