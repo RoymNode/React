@@ -1,0 +1,13 @@
+
+
+.text-as-button {
+    cursor: pointer;
+}
+
+.recipie-card {
+    width: 330px;
+    border: 2px gray solid;
+    background-color: gainsboro;
+    text-align: center;
+    border: 1px, #ccc solid;
+}
