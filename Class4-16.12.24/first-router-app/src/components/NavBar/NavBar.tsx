@@ -6,9 +6,9 @@ export const NavBar = (props: { theArr: NavItem[] }) => {
     return (
         <div className='NavBar'>
             {
-                props.theArr.map((curr) => {
+                props.theArr.map((curr, i) => {
                     return (
-                        <div className='navItem'>
+                        <div key={i} className='navItem'>
                             <Link to={curr.hrefStr}>{curr.displayStr}</Link>
                         </div>
                     )
