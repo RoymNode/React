@@ -2,10 +2,10 @@ import { useParams } from "react-router-dom";
 
 const CategoryPage = () =>{
     const params = useParams();
-    const productId = params.id;
+    const strCategory = params.cat;
     return (
         <div>
-            Category {productId}
+            Category {strCategory}
         </div>
     )
 }

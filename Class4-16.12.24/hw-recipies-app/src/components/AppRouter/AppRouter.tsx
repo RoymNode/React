@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Category, NavItem } from '../../types';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import CategoryPage from '../CategoryPage/CategoryPage';
 import Home from '../Home/Home';
+import './AppRouter.css';
 
 const NavBar = () => {
 const [categoriesData, setCategoriesData] = useState<Category[]>([]);
@@ -22,8 +23,17 @@ useEffect(() => {
     return (
         <div>
             <BrowserRouter>
+                <div className='cat-nav-bar'>
+                    <ul className='ul-link-items'>
+                    {
+                        categoriesData?.map((category) => {
+                            return <li className='li-link-item'><Link key={category.idCategory} to={category.strCategory}>{category.strCategory}</Link></li>
+                        })
+                    }
+                    </ul>
+                </div>
                 <Routes>
-                    <Route path="/" element=<Home /> />
+                    {/* <Route path="/" element=<Home /> /> */}
                     {
                         categoriesData?.map((category) => {
                             return (

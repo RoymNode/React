@@ -1,18 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Category, NavItem } from '../../types';
 
-export const NavBar = (props: {CategiriesArr: Category[]}) => {
+type CategoryProps = {
+    idCategory: string;
+    strCategory: string;
+};
+
+//export const NavBar = (props: {CategiriesArr: Category[]}) => {
+export const NavBar: React.FC<CategoryProps> = ({idCategory, strCategory}) => {
     return (
-      <div>
-         {
-            props.CategiriesArr.map((curr, i) => {
-                return (
-                    <div key={i} className='navItem'>
-                        <Link to={curr.idCategory}>{curr.strCategory}</Link>
-                    </div>
-                )
-            })
-            }
-      </div>
+        <div className='navItem'>
+            <Link to={idCategory}>{strCategory}</Link>
+        </div>
     );
 };

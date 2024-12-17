@@ -1,0 +1,14 @@
+.ul-link-items {
+    list-style-type: none;
+}
+
+.cat-nav-bar {
+    float: left;
+}
+
+.li-link-item {
+    height: 40px;
+    width: 150px;
+    border: 2px solid blue;
+    margin-top: 10px;
+}
