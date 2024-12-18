@@ -1,0 +1,27 @@
+.ul-meal-items img {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.meal-container {
+    width: 60%;
+    margin-top: 15px;
+    display: block;
+    border: 1px solid black;
+    height: 315px;
+}
+
+.name-details {
+    float: left;
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.meal-instructions {
+    float: right;
+    width: 50%;
+    height: 315px;
+    border: 1px solid black;
+} 

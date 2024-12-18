@@ -9,3 +9,11 @@ export type Category = {
     strCategoryThumb: string;
     strCategoryDescription: string
 }
+
+export type Meal = {
+    meals: [{
+    strMeal: string;
+    strMealThumb: string;
+    idMeal: string;
+}]
+}

@@ -1,0 +1,12 @@
+.cat-container-div {
+    padding-top: 15px;
+    float: right;
+    width: 70%;
+    text-align: center;
+}
+
+.ul-meal-items {
+    list-style-type: none;
+    display: flow-root;
+    text-align: -webkit-center;
+}

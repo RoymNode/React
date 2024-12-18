@@ -37,7 +37,7 @@ useEffect(() => {
                     {
                         categoriesData?.map((category) => {
                             return (
-                                <Route key={category.idCategory} path={`/${category.strCategory}`} element={<CategoryPage />} />
+                                <Route key={category.idCategory} path={"/:cat"} element={<CategoryPage />} />
                                 
                             );
                         })
