@@ -33,7 +33,10 @@ const CategoryPage = () =>{
                     mealsData?.meals?.map((meal) => {
                         return (
                             <li>
-                                <MealComponent key={meal.idMeal} strMeal={meal.strMeal} strMealThumb={meal.strMealThumb} idMeal={meal.idMeal} />
+                                <MealComponent key=          {meal.idMeal} 
+                                               strMeal=      {meal.strMeal} 
+                                               strMealThumb= {meal.strMealThumb} 
+                                               idMeal=       {meal.idMeal} />
                             </li>
                         );
                     })
