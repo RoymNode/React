@@ -24,10 +24,13 @@ const CategoryPage = () =>{
         <>
             <p>
                 <div className="cat-container-div">
-                    Category {strCategory}
+                    <h1 className="heading-text">{strCategory}</h1>
                 </div>
             </p>
             <br />
+            <br />
+            <br />
+            <br /><br />
             <ul className="ul-meal-items">
                 {
                     mealsData?.meals?.map((meal) => {
