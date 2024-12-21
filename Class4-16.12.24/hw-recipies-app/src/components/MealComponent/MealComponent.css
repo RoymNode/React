@@ -9,6 +9,7 @@
     display: block;
     border: 1px solid black;
     height: 315px;
+    cursor: pointer;
 }
 
 .name-details {
