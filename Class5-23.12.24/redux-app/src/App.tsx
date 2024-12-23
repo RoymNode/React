@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';  // Import Provider from react-redux
+import ProductsGallery from './components/ProductsGallery';
+import { store } from './store';
+import FavoriteProducts from './components/FavoriteProducts';
+import CitiesGallery from './components/CitiesGallery';
+import FavoriteCities from './components/FavoriteCities';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>  {/* We need to wrap our components inside the Provider */}
+      <div className="App">
+        <h1>Products</h1>
+        <ProductsGallery />
+        <hr />
+        <FavoriteProducts />
+        <br />
+        <hr />
+        <h1>Cities</h1>
+        <CitiesGallery />
+        <hr />
+        <FavoriteCities />
+      </div>
+    </Provider>
   );
 }
 
